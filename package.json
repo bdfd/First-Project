@@ -15,5 +15,17 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "nodemon": "^1.19.1"
+  },
+  "deploy-node-app": {
+    "prod": {
+      "context": "kubesail-bdfd",
+      "registry": "index.docker.io/v1/",
+      "type": "server",
+      "port": 3000,
+      "protocol": "http",
+      "entrypoint": "bin\\www",
+      "registryUsername": "bdfd",
+      "isPublic": false
+    }
   }
 }
